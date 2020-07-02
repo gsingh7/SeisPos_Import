@@ -1,0 +1,19 @@
+#LineDirectionFrom should contain the name of the field with line direction, there should be a field with names X and Y
+schema:P111SGeomerge
+type:CSV
+filter:^S1,
+LineNameFrom:Line
+pointnumFrom:Station
+XFrom:Easting
+YFrom:Northing
+LineDirectionFrom:Station
+field:Line:2:2:str
+field:Station:4:4:int
+field:DateTime:7:7:str
+field:Latitude:15:15:str
+field:Longitude:16:16:str
+field:Easting:12:12:float
+field:Northing:13:13:float
+field:VesselID:6:6:str
+field:sourceID:9:9:str
+

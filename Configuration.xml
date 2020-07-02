@@ -1,0 +1,8 @@
+<configuration>
+    <npgsql>
+        <conn credentials="host">3.85.249.224</conn>
+           <conn credentials="rowid">853642791</conn>
+           <conn credentials="url">http://3.85.249.224:8080/geoserver/</conn>
+
+    </npgsql>
+    </configuration>

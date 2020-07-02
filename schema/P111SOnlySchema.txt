@@ -1,0 +1,14 @@
+#LineDirectionFrom should contain the name of the field with line direction, there should be a field with names X and Y
+schema:P111S
+type:CSV
+filter:^S1,
+LineDirectionFrom:pointnum
+field:Linename:2:2:str
+field:VesselID:6:6:str
+field:sourceID:9:9:str
+field:pointnum:4:4:int
+field:Latitude:15:15:str
+field:Longitude:16:16:str
+field:X:12:12:float
+field:Y:13:13:float
+field:depth:26:26:str

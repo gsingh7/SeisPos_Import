@@ -1,0 +1,9 @@
+#LineDirectionFrom should contain the name of the field with line direction, there should be a field with names X and Y
+schema:receiverSPS
+type:fixedWidth
+filter:^R
+LineDirectionFrom:none
+field:Linename:2:17:str
+field:pointnum:18:23:int
+field:X:47:55:float
+field:Y:56:65:float

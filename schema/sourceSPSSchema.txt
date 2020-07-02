@@ -1,0 +1,14 @@
+#LineDirectionFrom should contain the name of the field with line direction, there should be a field with names X and Y
+schema:sourceSPS
+type:fixedWidth
+filter:^S
+LineDirectionFrom:pointnum
+field:Linename:2:17:str
+field:pointnum:18:25:int
+field:X:47:55:float
+field:Y:56:65:float
+field:code:27:28:str
+field:depth:41:46:float
+field:tide:66:71:float
+field:dayofyear:72:74:int
+field:time:75:80:str

@@ -1,0 +1,9 @@
+#LineDirectionFrom should contain the name of the field with line direction, there should be a field with names X and Y
+schema:preplot190
+type:fixedWidth
+filter:^[V|S|R]
+LineDirectionFrom:none
+field:Linename:2:13:str
+field:pointnum:20:25:int
+field:X:47:55:float
+field:Y:56:64:float
