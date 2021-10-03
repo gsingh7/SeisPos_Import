@@ -10,7 +10,7 @@
 name=Seismic Positioning Data Importer
 qgisMinimumVersion=3.0
 description=This plugin imports Seismic Positioning or Navigation data from various formats such as P1/11 (P111), P1/90 (P190), SPS.
-version=0.1
+version=0.3
 author=Gurpreet Singh
 email=gurpreet.s.singh@gmail.com
 
@@ -23,7 +23,7 @@ repository=https://github.com/gsingh7/SeisPos_Import
 # Recommended items:
 
 # Uncomment the following line and add your changelog:
-# changelog=
+changelog=Add fix for ignoring binary characters in file.
 
 # Tags are comma separated with spaces allowed
 tags=import, shapefile, vector, seismic, SPS, P190, P111, P1/90, P1/11
