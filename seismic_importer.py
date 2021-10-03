@@ -283,11 +283,12 @@ class SeisPosImport:
         pointList = []
         for file in self.inFiles:
             filePath = QFileInfo(file).absoluteFilePath()
-            f = open(filePath, 'rU')
+            f = open(filePath, 'rb')
             #pointListPerFile = []
             pointListPerLine = []
             prevLinename = ''
             for line in f:
+                line = unicode(line, errors='replace')
                 if(self.customFilterRequired):
                     m = re.search(self.filter,line)
                 else:
