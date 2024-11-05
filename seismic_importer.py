@@ -248,7 +248,7 @@ class SeisPosImport:
         schemaDict['pointnumFrom'] = 'pointnum'
         schemaDict['XFrom'] = 'X'
         schemaDict['YFrom'] = 'Y'
-        with open(self.schemaPath,'rU') as fschema:
+        with open(self.schemaPath,'r') as fschema:
             for line in fschema:
                 fields = line.split(':')
                 if(fields[0]=='schema'):
