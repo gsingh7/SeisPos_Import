@@ -10,7 +10,7 @@
 name=Seismic Positioning Data Importer
 qgisMinimumVersion=3.0
 description=This plugin imports Seismic Positioning or Navigation data from various formats such as P1/11 (P111), P1/90 (P190), SPS.
-version=0.4
+version=0.5
 author=Gurpreet Singh
 email=gurpreet.s.singh@gmail.com
 
