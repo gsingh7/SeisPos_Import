@@ -23,9 +23,10 @@
 """
 
 import os
-
 from PyQt5 import uic
 from PyQt5 import QtWidgets
+from PyQt5.QtCore import QUrl
+from PyQt5.QtGui import QDesktopServices
 
 # This loads your .ui file so that PyQt can populate your plugin with the elements from Qt Designer
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
@@ -42,3 +43,34 @@ class SeisPosImportDialog(QtWidgets.QDialog, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+        
+        # Set up company logo
+        logo_path = os.path.join(os.path.dirname(__file__), 'company_logo.png')
+        if os.path.exists(logo_path):
+            self.companyLogo.setText(
+                f'<div style="text-align: center;">'
+                f'<div style="display: inline-block; background-color: white; padding: 5px; border-radius: 3px;">'
+                f'<a href="https://www.toplevelview.com">'
+                f'<img src="{logo_path}" style="max-width: 150px; height: auto; object-fit: contain;" alt="Top Level View">'
+                f'</a>'
+                f'<br>'
+                f'<a href="https://www.toplevelview.com" style="text-decoration: none; color: #666666; font-size: 10px;">'
+                f'Built by Top Level View'
+                f'</a>'
+                f'</div>'
+                f'</div>'
+            )
+        else:
+            self.companyLogo.setText(
+                '<div style="text-align: center;">'
+                '<div style="display: inline-block; background-color: white; padding: 5px; border-radius: 3px;">'
+                '<a href="https://www.toplevelview.com">'
+                '<span style="font-size: 14px; color: #0066cc;">Top Level View</span>'
+                '</a>'
+                '<br>'
+                '<a href="https://www.toplevelview.com" style="text-decoration: none; color: #666666; font-size: 10px;">'
+                'Built by Top Level View'
+                '</a>'
+                '</div>'
+                '</div>'
+            )

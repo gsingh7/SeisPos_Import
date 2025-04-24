@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/plugins/seismic_importer" >
         <file>icon.png</file>
+        <file>company_logo.png</file>
     </qresource>
 </RCC>
